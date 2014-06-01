@@ -85,679 +85,207 @@
 
 
 
-body.d1 {
+
 
 	
 
-	@logo_bkg: #202833;
-	@menu_bar_bkg_color: lighten(@logo_bkg, 20%);
-	@footer_bkg: @menu_bar_bkg_color;
+@logo_bkg: #202833;
+@menu_bar_bkg_color: lighten(@logo_bkg, 20%);
+@footer_bkg: @menu_bar_bkg_color;
 
-	@font-color-dark: #454545;
-	@font-color-light: #fff;
-	@link-color: #0042d6;
+@font-color-dark: #454545;
+@font-color-light: #fff;
+@link-color: #0042d6;
 
-	font-family: "Raleway Medium", "Tahoma", "sans serif";
-
-	h1, h2, h3, h4, h5 { font-family: "Raleway Light"; }
-
-
-
+body {
+	font-family: "Raleway Medium", "Tahoma", "sans serif";	
 	color: @font-color-dark;
+}
 
 
-	a { text-decoration: none; }
-	.link-hover(@font-color-dark, @link-color);
+h1, h2, h3, h4, h5 { font-family: "Raleway Light"; }
 
 
-	header#main {
-		height: 200px;
+
+
+
+
+a { text-decoration: none; }
+.link-hover(@font-color-dark, @link-color);
+
+
+header#main {
+	position: relative;
+
+	#logo {
 		background: @logo_bkg;
-		background-image: url('../img/emcomp-logo-1.jpg');
-		background-repeat: no-repeat;
-		background-position: top center;
-		position: relative;
-
-
-		#mainmenu {
-			background: @menu_bar_bkg_color;
-			color: @font-color-light;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-
-			li > div { text-align: center; line-height: 40px; }
-
-			.link-hover(@font-color-light, #d2d2d2 );
+		img { 
+			width: 900px;
+			max-width: 100%;
+			min-width: 300px;
+			margin: 0 auto;
 		}
-
-		#software-link {
-			background: #29a6de;
-			color: @font-color-dark;
-			
-		}
-
 	}
 
-	#main-content {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		overflow: auto;
-		min-height: 300px;
-
-
-	}
-
-	#info-for-panel {
-		background-color: #f58021; 
+	#mainmenu {
+		background: @menu_bar_bkg_color;
 		color: @font-color-light;
+		width: 100%;
 
+		li > div { text-align: center; line-height: 40px; }
 
 		.link-hover(@font-color-light, #d2d2d2 );
-
-
-		h3 { margin: 0 0 10px 0; }
-
-		padding: 10px 10px;
-
-		li > a {font-size: 14px;}
 	}
 
-	#main-lab-info {
-		p { font-size: 14px; line-height: 24px; }
-	}
-
-	#main-lab-info-blurbs {
-		margin-top: 50px;
-	}
-
-	.main-lab-info-mini {
-		height: 100px; 
-		overflow: hidden;
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 40px;
-	}
-
-
-	#news-panel {
-		.news-item {
-			a { text-decoration: none; display: block; }
-			.link-hover(@font-color-dark, @link-color);
-			h5 { margin: 0 0 5px 0; }
-		}
-	}
-
-
-	footer {
-		min-height: 150px;
-		background-color: @footer_bkg;
-		margin-top: 50px;
-		padding-top: 20px;
-		color: @font-color-light;
-		font-size: 12px;
-
-		h3 {
-			margin: 0 0 10px 0;
-		}
-
-
-		.link-hover(@font-color-light, #d2d2d2 );
-
-
-		#associations {
-			.assoc-logo {
-				max-height: 50px;
-				margin-right: 20px;
-				margin-top: 25px;
-			}			
-		}
-	}
-
-
-	.member-panel {
-		margin-left: 40px;
-		margin-bottom: 20px; 
-		background: lighten(@logo_bkg, 70%);
+	#software-link {
+		background: #29a6de;
 		color: @font-color-dark;
-		padding: 10px 20px 10px 10px;
-		overflow: auto;
-
-		h5 {
-			margin-top: 0;
-			margin-bottom: 5px;
-			font-size: 20px;
-			float: left; 
-			margin-right: 30px;
-		}
-
-		p { margin: 0; font-size: 14px; }
-
-		.member-name {
-			position: relative; 
-			margin-bottom: 10px;
-		}
+		
 	}
 
-	.member-pic {
-		width: 120px;
-		height: 120px;
-		float: left;
+}
+
+#main-content {
+	min-height: 300px;
+
+
+}
+
+#info-for-panel {
+	background-color: #f58021; 
+	color: @font-color-light;
+
+
+	.link-hover(@font-color-light, #d2d2d2 );
+
+
+	h3 { margin: 0 0 10px 0; }
+
+	padding: 10px 10px;
+
+	li > a {font-size: 14px;}
+}
+
+@media all and (max-width: 768px) and (min-width: 320px) {
+	#info-for-panel {
+		li { display: inline-block; }
+	}	
+}
+
+
+#main-lab-info {
+	margin-top: 30px; 
+	p { font-size: 14px; line-height: 24px; }
+}
+
+#main-lab-info-blurbs {
+	margin-top: 50px;
+}
+
+.main-lab-info-mini {
+	height: 100px; 
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 40px;
+	img {
+		margin-right: 20px;
+	}
+}
+
+
+#news-panel {
+	.news-item {
+		a { text-decoration: none; display: block; }
+		.link-hover(@font-color-dark, @link-color);
+		h5 { margin: 0 0 5px 0; }
+	}
+}
+
+
+footer {
+	min-height: 150px;
+	background-color: @footer_bkg;
+	margin-top: 50px;
+	padding-top: 20px;
+	color: @font-color-light;
+	font-size: 12px;
+
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+
+	.link-hover(@font-color-light, #d2d2d2 );
+
+
+	#associations {
+		.assoc-logo {
+			max-height: 50px;
+			margin-right: 20px;
+			margin-top: 25px;
+		}			
+	}
+}
+
+
+.member-panel {
+	margin-left: 40px;
+	margin-bottom: 20px; 
+	background: lighten(@logo_bkg, 70%);
+	color: @font-color-dark;
+	padding: 10px 20px 10px 10px;
+	overflow: auto;
+
+	h5 {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 20px;
+		float: left; 
 		margin-right: 30px;
-		text-align: center;
-
-
-		img {
-			max-width: 100px;
-			max-height: 120px;
-
-		}
 	}
 
-	.member-contact { font-size: 12px; color: lighten(@font-color-dark, 30%); }
-	.contact-list li { display: inline; margin-left: 5px; }
+	p { margin: 0; font-size: 14px; }
 
-
-	#map-sieg {
-		max-width: 100%;
-		height: 300px;
-		background: url('../img/map-sieg.png') center center no-repeat;
+	.member-name {
+		position: relative; 
+		margin-bottom: 10px;
 	}
+}
+
+.member-pic {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
 
 
+	img {
+		max-width: 100px;
+		max-height: 120px;
 
-	#contact-form {
-		.input-row { margin-top: 20px; }
-		label { width: 100px; display: inline-block; margin-left: 20px; }
-		textarea { width: 400px; height: 200px; }
 	}
+}
+
+.member-contact { font-size: 12px; color: lighten(@font-color-dark, 30%); }
+.contact-list li { display: inline; margin-left: 5px; }
+
+
+#map-sieg {
+	max-width: 100%;
+	height: 300px;
+	background: url('../img/map-sieg.png') center center no-repeat;
+}
 
 
 
-
-
+#contact-form {
+	.input-row { margin-top: 20px; }
+	label { width: 100px; display: inline-block; margin-left: 20px; }
+	textarea { width: 400px; height: 200px; }
 }
 
 
 
 
-/*
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
- body.d2 {
-
-	
-
-	@logo_bkg: #2E1841;
-	@menu_bar_bkg_color: #BE3A74;
-	@footer_bkg: @menu_bar_bkg_color;
-
-	@font-color-dark: #454545;
-	@font-color-light: #fff;
-	@link-color: #0042d6;
-
-
-	background: @logo_bkg;
-
-	font-family: "Raleway Medium", "Tahoma", "sans serif";
-
-	h1, h2, h3, h4, h5 { font-family: "Raleway Light"; color: #E80866; }
-
-
-
-	color: @font-color-dark;
-
-
-	a { text-decoration: none; }
-	.link-hover(@font-color-dark, @link-color);
-
-
-	header#main {
-		height: 300px;
-		background: @logo_bkg;
-		position: relative;
-
-
-		#logo, #byline { font-family: "Raleway Light"; vertical-align: bottom; }
-		#logo { font-size: 100px; text-align: center; color: #fff; line-height: 200px; font-family: "Raleway Light"; vertical-align: bottom; }
-		#byline { font-size: 20px; text-align: center; color: #fff; margin-top: -30px; }
-
-
-		#mainmenu {
-			background: @menu_bar_bkg_color;
-			color: @font-color-light;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-
-			li > div { text-align: center; line-height: 40px; }
-
-			.link-hover(@font-color-light, #d2d2d2 );
-		}
-
-		#software-link > div {
-			background: #E84A8D;
-			color: @font-color-dark;
-			.link-hover(@font-color-light, @link-color );
-		}
-
-	}
-
-	#main-content {
-		overflow: auto;
-		min-height: 300px;
-		
-
-		&.contact { background: #fff; }
-
-		& > div.row {
-			border-bottom-left-radius: 25px;
-			border-bottom-right-radius: 25px;
-		}		
-	}
-
-	#info-for-panel {
-		background-color: #5B9707; 
-		color: @font-color-light;
-
-
-		.link-hover(@font-color-light, #d2d2d2 );
-
-		margin-top: 20px;
-
-		h3 { margin: 0 0 10px 0; color: #fff; }
-
-		padding: 10px 10px;
-
-		li > a {font-size: 14px;}
-	}
-
-	#main-lab-info {
-		p { font-size: 14px; line-height: 24px; }
-		background: #fff;
-		padding-top: 40px;
-	}
-
-	#main-lab-info-blurbs {
-		margin-top: 50px;
-	}
-
-	.main-lab-info-mini {
-		height: 100px; 
-		overflow: hidden;
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 40px;
-	}
-
-
-	#news-panel {
-		background: rgba(255,255,255,0.25);
-
-
-		.news-item {
-			a { text-decoration: none; display: block; }
-			.link-hover(@font-color-light, #d2d2d2);
-			h5 { margin: 0 0 5px 0; }
-		}
-	}
-
-
-	footer {
-		min-height: 150px;
-		background-color: @footer_bkg;
-		margin-top: 50px;
-		padding-top: 20px;
-		color: @font-color-light;
-		font-size: 12px;
-
-		h3 {
-			margin: 0 0 10px 0; color: #fff; font-size: 20px;
-		}
-
-
-		.link-hover(@font-color-light, #d2d2d2 );
-
-
-		#associations {
-			.assoc-logo {
-				max-height: 50px;
-				margin-right: 20px;
-				margin-top: 25px;
-			}			
-		}
-	}
-
-
-	.member-panel {
-		margin-left: 40px;
-		margin-bottom: 20px; 
-		background: lighten(@logo_bkg, 70%);
-		color: @font-color-dark;
-		padding: 10px 20px 10px 10px;
-		overflow: auto;
-
-		h5 {
-			margin-top: 0;
-			margin-bottom: 5px;
-			font-size: 20px;
-			float: left; 
-			margin-right: 30px;
-		}
-
-		p { margin: 0; font-size: 14px; }
-
-		.member-name {
-			position: relative; 
-			margin-bottom: 10px;
-		}
-	}
-
-	.member-pic {
-		width: 120px;
-		height: 120px;
-		float: left;
-		margin-right: 30px;
-		text-align: center;
-		
-
-		img {
-			max-width: 100px;
-			max-height: 120px;
-
-		}
-	}
-
-	.member-contact { font-size: 12px; color: lighten(@font-color-dark, 30%); }
-	.contact-list li { display: inline; margin-left: 5px; }
-
-
-	#map-sieg {
-		max-width: 100%;
-		height: 300px;
-		background: url('../img/map-sieg.png') center center no-repeat;
-	}
-
-
-
-	#contact-form {
-		.input-row { margin-top: 20px; }
-		label { width: 100px; display: inline-block; margin-left: 20px; }
-		textarea { width: 400px; height: 200px; }
-	}
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/*
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
- body.d3 {
-
-	
-
-	@logo_bkg: #fff;
-	@menu_bar_bkg_color: #d2d2d2;
-	@footer_bkg: @menu_bar_bkg_color;
-
-	@font-color-dark: #454545;
-	@font-color-light: #fff;
-	@link-color: #0042d6;
-
-
-	
-
-
-	background: @logo_bkg;
-
-	font-family: "Lato Regular", "Tahoma", "sans serif";
-
-	h1, h2, h3, h4, h5 { font-family: "Lato Light"; color: #F37900; }
-
-
-
-	color: @font-color-dark;
-
-
-	a { text-decoration: none; }
-	.link-hover(@font-color-dark, @link-color);
-
-	.link-dark() { .link-hover(@font-color-dark, @link-color); }
-	.link-light() { .link-hover(@font-color-light, #d2d2d2 ); }
-
-
-
-	header#main {
-		height: 300px;
-		background: @logo_bkg;
-		position: relative;
-
-
-		#logo, #byline {  }
-		#logo { font-size: 100px; text-align: center; color: @font-color-dark; line-height: 200px; vertical-align: bottom; font-family: "JosefinSans Light";}
-		#byline { font-size: 20px; text-align: center; color: lighten(@font-color-dark,25%); margin-top: -25px; font-family: "Lato Light";}
-
-
-		#mainmenu {
-			background: @menu_bar_bkg_color;
-			color: @font-color-dark;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-
-			font-size: 24px;
-			font-family: "Lato Bold";
-
-
-			li > div { text-align: center; line-height: 48px; }
-
-			.link-hover(@font-color-dark, @link-color );
-		}
-
-		#software-link > div {
-			background: #F37900;
-			color: @font-color-dark;
-			.link-hover(@font-color-light, @link-color );
-		}
-
-	}
-
-	#main-content {
-		overflow: auto;
-		min-height: 300px;
-		
-
-		&.contact { background: #fff; }
-
-		& > div.row {
-			border-bottom-left-radius: 25px;
-			border-bottom-right-radius: 25px;
-		}		
-	}
-
-	#info-for-panel {
-
-		color: @font-color-dark;
-
-		.link-dark();
-
-		
-		margin-top: 20px;
-
-		h3 { margin: 0 0 10px 0; }
-
-		padding: 10px 10px;
-
-		li > a {font-size: 14px;}
-	}
-
-	#main-lab-info {
-		p { font-size: 14px; line-height: 24px; }
-		background: #fff;
-		padding-top: 40px;
-	}
-
-	#main-lab-info-blurbs {
-		margin-top: 50px;
-	}
-
-	.main-lab-info-mini {
-		height: 100px; 
-		overflow: hidden;
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 40px;
-	}
-
-
-	#news-panel {
-		background: rgba(255,255,255,0.25);
-
-
-		.news-item {
-			a { text-decoration: none; display: block; }
-			.link-hover(@font-color-dark, #d2d2d2);
-			h5 { margin: 0 0 5px 0; }
-		}
-	}
-
-
-	footer {
-		min-height: 150px;
-		background-color: @footer_bkg;
-		margin-top: 50px;
-		padding-top: 20px;
-		color: @font-color-dark;
-		font-size: 12px;
-
-		h3 {
-			margin: 0 0 10px 0; color: @font-color-dark; font-size: 20px;
-		}
-
-
-		.link-hover(@font-color-light, #d2d2d2 );
-
-
-		#associations {
-			.assoc-logo {
-				max-height: 50px;
-				margin-right: 20px;
-				margin-top: 25px;
-			}			
-		}
-	}
-
-
-	.member-panel {
-		margin-left: 40px;
-		margin-bottom: 20px; 
-		background: lighten(@logo_bkg, 70%);
-		color: @font-color-dark;
-		padding: 10px 20px 10px 10px;
-		overflow: auto;
-
-		h5 {
-			margin-top: 0;
-			margin-bottom: 5px;
-			font-size: 20px;
-			float: left; 
-			margin-right: 30px;
-		}
-
-		p { margin: 0; font-size: 14px; }
-
-		.member-name {
-			position: relative; 
-			margin-bottom: 10px;
-		}
-	}
-
-	.member-pic {
-		width: 120px;
-		height: 120px;
-		float: left;
-		margin-right: 30px;
-		text-align: center;
-		
-
-		img {
-			max-width: 100px;
-			max-height: 120px;
-
-		}
-	}
-
-	.member-contact { font-size: 12px; color: lighten(@font-color-dark, 30%); }
-	.contact-list li { display: inline; margin-left: 5px; }
-
-
-	#map-sieg {
-		max-width: 100%;
-		height: 300px;
-		background: url('../img/map-sieg.png') center center no-repeat;
-	}
-
-
-
-	#contact-form {
-		.input-row { margin-top: 20px; }
-		label { width: 100px; display: inline-block; margin-left: 20px; }
-		textarea { width: 400px; height: 200px; }
-	}
-
-
-
-
-
-}
