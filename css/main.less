@@ -92,6 +92,7 @@
 @logo_bkg: #202833;
 @menu_bar_bkg_color: lighten(@logo_bkg, 20%);
 @footer_bkg: @menu_bar_bkg_color;
+@software_link_bkg_color: #29a6de;
 
 @font-color-dark: #454545;
 @font-color-light: #fff;
@@ -137,12 +138,21 @@ header#main {
 		li > div { text-align: center; line-height: 40px; }
 
 		.link-hover(@font-color-light, #d2d2d2 );
+
+		li.active { background: lighten(@logo_bkg, 30%); }
+
 	}
 
-	#software-link {
-		background: #29a6de;
+
+	li#software-link {
+		background: @software_link_bkg_color;
 		color: @font-color-dark;
 		
+
+		&.active { 
+			background: lighten(@software_link_bkg_color, 20%);
+			a { color: @font-color-dark; }
+		}
 	}
 
 }
