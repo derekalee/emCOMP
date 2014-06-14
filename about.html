@@ -2,178 +2,198 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>emComp Lab</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet/less" type="text/css" href="css/main.less">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>emComp Lab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/less-1.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
 
-    </head>
-    <body class="d1">
-        <style>
-            .test { background: #eee; border: 1px solid #888;}
-            .grid-overlay {
-                position: absolute;
-                height: 100%;
-                min-height: 100%;
-                width: 100%;
-                opacity: 0.1;
-                z-index: 10000;
-            }
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/less-1.7.0.min.js"></script>
 
-            .dbg-overlay {
-                background: #00d;
-            }
+</head>
 
-            .dbg-full-height {
-                min-height: 100%;
-                height: 100%;
-            }
+<body class="d1">
+    <style>
+    .test {
+        background: #eee;
+        border: 1px solid #888;
+    }
+    .grid-overlay {
+        position: absolute;
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        opacity: 0.1;
+        z-index: 10000;
+    }
+    .dbg-overlay {
+        background: #00d;
+    }
+    .dbg-full-height {
+        min-height: 100%;
+        height: 100%;
+    }
+    </style>
+    <header id="main">
+        <!--emCOMP Logo-->
+        <div class="container logo-bkg">
+            <div class="row">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/emcomp-logo-1.jpg" alt="logo: emComp - Emerging capacities of mass participation" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="mainmenu">
+            <div class="container">
+                <ul class="styleless-list row">
+                    <li class="col-lg-2 col-md-2">
+                        <div><a href="about.html">About Us</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-2 col-md-2">
+                        <div><a href="research.html">Research</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-2 col-md-2">
+                        <div><a href="publications.html">Publications</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-2 col-md-2">
+                        <div><a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2" id="software-link">
+                        <div><a href="software.html">Software</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
+    <div id="main-content" class="container">
 
-        </style>
-        <header id="main">
-			<!--emCOMP Logo-->
-			<div class="container logo-bkg">
-				<div class="row">
-					<div id="logo">
-						<a href="index.html"><img src="img/emcomp-logo-1.jpg" alt="logo: emComp - Emerging capacities of mass participation" /></a>
-					</div>
-				</div>
-			</div>
-            <div id="mainmenu">
-                <div class="container">
-                    <ul class="styleless-list row">
-                        <li class="col-lg-2 col-md-2">
-                            <div><a href="about.html">About Us</a></div>
+        <div class="row">
+            <div class="col-lg-2">
+                <div id="info-for-panel">
+                    <h3>About Us:</h3>
+                    <ul class="styleless-list">
+                        <li><a href="#people">People</a>
                         </li>
-                        <li class="col-lg-2 col-md-2">
-                            <div><a href="research.html">Research</a></div>
+                        <li><a href="#collaborators">Collaborators</a>
                         </li>
-                        <li class="col-lg-2 col-md-2">
-                            <div><a href="publications.html">Publications</a></div>
+                        <li><a href="#awards">Awards</a>
                         </li>
-                        <li class="col-lg-2 col-md-2">
-                            <div><a href="contact.html">Contact Us</a></div>
-                        </li>
-                        <li class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2" id="software-link">
-                            <div><a href="software.html">Software</a></div>
+                        <li><a href="#grants">Current Grants</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </header>
-
-        <div id="main-content" class="container">
-
-            <div class="row">
-                <div class="col-lg-2">
-                    <div id="info-for-panel">
-                        <h3>About Us:</h3>
-                        <ul class="styleless-list">
-                            <li><a href="#people">People</a></li>
-                            <li><a href="#collaborators">Collaborators</a></li>
-                            <li><a href="#awards">Awards</a></li>
-                            <li><a href="#grants">Current Grants</a></li>
-                        </ul>
+            <div id="main-lab-info" class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>About Us</h1>
+                        <p>The Emerging Capacities of Mass Participation(emCOMP) Laboratory, directed by Assistant Professor Kate Starbird, investigates the dynamics of massive participation and interaction enabled by new and social media. Focusing on specific events and issues that bring people together on a large scale, researchers both examine the flow of interactions and explore possibilities for applying online participation to problem-solving on a massive or even global scale. Situated within Human-Computer Interaction (HCI) and Computer-Supported Cooperative Work (CSCW), as well as the emerging fields of collective intelligence, crowdsourcing, and human computation, the lab’s research integrates qualitative, quantitative, and computational analysis of social media interactions and seeks to identify and pursue design opportunities to support and harness mass participation within relevant contexts.</p>
                     </div>
                 </div>
-                <div id="main-lab-info" class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1>About Us</h1>
-                            <p>The Emerging Capacities of Mass Participation(emCOMP) Laboratory, directed by Assistant Professor Kate Starbird, investigates the dynamics of massive participation and interaction enabled by new and social media. Focusing on specific events and issues that bring people together on a large scale, researchers both examine the flow of interactions and explore possibilities for applying online participation to problem-solving on a massive or even global scale. Situated within Human-Computer Interaction (HCI) and Computer-Supported Cooperative Work (CSCW), as well as the emerging fields of collective intelligence, crowdsourcing, and human computation, the lab’s research integrates qualitative, quantitative, and computational analysis of social media interactions and seeks to identify and pursue design opportunities to support and harness mass participation within relevant contexts.</p>
-                        </div>
+                <div id="people" class="row">
+                    <div class="col-lg-6">
+                        <h2>People</h2>
+                        <p>The emCOMP contains members from multiple departments including Human Centered Design and Engineering, Informatics, and Computer Engineering. Our current PhD students are Dharma Dailey and Camille Cobb.</p>
+                        <p>For a complete list of lab members and contact information please visit our <a href="contact.html">contact</a> page.
+                        </p>
                     </div>
-                    <div id="people" class="row">
-                        <div class="col-lg-6">
-                            <h2>People</h2>
-                            <p>The emCOMP contains members from multiple departments including Human Centered Design and Engineering, Informatics, and Computer Engineering. Our current PhD students are Dharma Dailey and Camille Cobb.</p>
-                            <p>For a complete list of lab members and contact information please visit our <a href="contact.html">contact</a> page.
-                            </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="img/kate-large.jpg" style="max-height: 200px;" />
-                        </div>
+                    <div class="col-lg-6">
+                        <img src="img/kate-large.jpg" style="max-height: 200px;" />
                     </div>
-                    <div id="collaborators" class="row">
-                        <div class="col-lg-12">
-                            <h2>Collaborators</h2>
-                            <p>The emCOMP collaborates with another lab from the Information school on projects and datasets, such as the Boston Marathon Bombing. Additional collaborators should be listed here.</p>
-                        </div>
-                    </div>
-                    <div id="awards" class="row">
-                        <div class="col-lg-12">
-                            <h2>Awards</h2>
-                            <p>Human Centered Design &amp; Engineering (HCDE) Professor Kate Starbird and University of Colorado, Boulder, Professor Leysia Palen have received a Best Paper award at the 2013 Computer Supported Cooperative Work and Social Computing (CSCW) conference, which will take place February 23-27 in San Antonio, Texas. Their paper, "Working and Sustaining the Virtual 'Disaster Desk'," follows the trajectory of Humanity Road, a volunteer organization working within the domain of disaster response, from an emergent group to a formal nonprofit.</p>
-                        </div>
-                    </div>
-                    <div id="grants" class="row">
-                        <div class="col-lg-12">
-                            <h2>Grants</h2>
-                            <p>iSchool Professor Robert Mason and the SoMeLab team, along with HCDE Assistant Professor Kate Starbird, have received an NSF RAPID grant for $73,000 to explore social media use and networks in the wake of the Boston Marathon bombing in April.</p>
-                            <p>The project, entitled Social Media: Learning from the Boston Marathon Bombing, will address research questions concerning the social media paths and mechanisms through which information about the event traveled, how people mobilized to share information, and how information flows and mobilization for this event differs from similar flows and mobilization around natural disaster events.</p>
-                        </div>
-                    </div>
-                <div id="news-panel" class="col-lg-2">
                 </div>
+                <div id="collaborators" class="row">
+                    <div class="col-lg-12">
+                        <h2>Collaborators</h2>
+                        <p>The emCOMP collaborates with another lab from the Information school on projects and datasets, such as the Boston Marathon Bombing. Additional collaborators should be listed here.</p>
+                    </div>
+                </div>
+                <div id="awards" class="row">
+                    <div class="col-lg-12">
+                        <h2>Awards</h2>
+                        <p>Human Centered Design &amp; Engineering (HCDE) Professor Kate Starbird and University of Colorado, Boulder, Professor Leysia Palen have received a Best Paper award at the 2013 Computer Supported Cooperative Work and Social Computing (CSCW) conference, which will take place February 23-27 in San Antonio, Texas. Their paper, "Working and Sustaining the Virtual 'Disaster Desk'," follows the trajectory of Humanity Road, a volunteer organization working within the domain of disaster response, from an emergent group to a formal nonprofit.</p>
+                    </div>
+                </div>
+                <div id="grants" class="row">
+                    <div class="col-lg-12">
+                        <h2>Grants</h2>
+                        <p>iSchool Professor Robert Mason and the SoMeLab team, along with HCDE Assistant Professor Kate Starbird, have received an NSF RAPID grant for $73,000 to explore social media use and networks in the wake of the Boston Marathon bombing in April.</p>
+                        <p>The project, entitled Social Media: Learning from the Boston Marathon Bombing, will address research questions concerning the social media paths and mechanisms through which information about the event traveled, how people mobilized to share information, and how information flows and mobilization for this event differs from similar flows and mobilization around natural disaster events.</p>
+                    </div>
+                </div>
+                <div id="news-panel" class="col-lg-2"></div>
 
             </div>
         </div>
+    </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div id="associations" class="col-lg-3">
-                    <h3>Associations</h3>
-                    <a href="http://dub.washington.edu/" target="_blank">
-                        <img src="img/dub-white.png" alt="dub" class="assoc-logo">
-                    </a>
-                    <a href="http://www.hcde.washington.edu/" target="_blank">
-                        <img src="img/hcde_white_100.png" alt="HCDE" class="assoc-logo">
-                    </a>
-                    <a href="http://www.washington.edu/" target="_blank">
-                        <img src="img/patch-purple.png" alt="UW" class="assoc-logo">
-                    </a>
-                </div>
-                <div id="ftr-contact" class="col-lg-3 col-lg-offset-1">
-                    <h3>Contact</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem cumque deleniti totam nam quis debitis voluptatibus. Nemo, voluptatem, autem deserunt iusto animi eos reiciendis sed fuga suscipit quod nostrum.</p>
-                </div>
-                <div id="ftr-grants" class="col-lg-2 col-lg-offset-1">
-                    <a href="#">
-                        <h3>Grants</h3>
-                    </a>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div id="associations" class="col-lg-3">
+                        <h3>Associations</h3>
+                        <a href="http://dub.washington.edu/" target="_blank">
+                            <img src="img/dub-white.png" alt="dub" class="assoc-logo">
+                        </a>
+                        <a href="http://www.hcde.washington.edu/" target="_blank">
+                            <img src="img/hcde_white_100.png" alt="HCDE" class="assoc-logo">
+                        </a>
+                        <a href="http://www.washington.edu/" target="_blank">
+                            <img src="img/patch-purple.png" alt="UW" class="assoc-logo">
+                        </a>
+                    </div>
+                    <div id="ftr-contact" class="col-lg-3 col-lg-offset-1">
+                        <h3>Contact</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatem cumque deleniti totam nam quis debitis voluptatibus. Nemo, voluptatem, autem deserunt iusto animi eos reiciendis sed fuga suscipit quod nostrum.</p>
+                    </div>
+                    <div id="ftr-grants" class="col-lg-2 col-lg-offset-1">
+                        <a href="#">
+                            <h3>Grants</h3>
+                        </a>
                         <ul class="styleless-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
-                            <li><a href="#">Libero voluptatem cumque deleniti totam nam quis debitis voluptatibus</a></li>
-                            <li><a href="#">Nemo, voluptatem, autem deserunt iusto animi eos reiciendis sed fuga suscipit quod nostrum</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                            </li>
+                            <li><a href="#">Libero voluptatem cumque deleniti totam nam quis debitis voluptatibus</a>
+                            </li>
+                            <li><a href="#">Nemo, voluptatem, autem deserunt iusto animi eos reiciendis sed fuga suscipit quod nostrum</a>
+                            </li>
                         </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="members-login" class="col-lg-2 col-lg-push-10">
+                        <a href="#">Members Login</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div id="members-login" class="col-lg-2 col-lg-push-10">
-                    <a href="#">Members Login</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+        </script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-    </body>
+</body>
+
 </html>
